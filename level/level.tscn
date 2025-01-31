@@ -1,0 +1,16 @@
+[gd_scene load_steps=3 format=3 uid="uid://bfd7sjy1wbqem"]
+
+[ext_resource type="Texture2D" uid="uid://bca0db1txd5bn" path="res://assets/kenney_prototype-textures/PNG/Dark/texture_08.png" id="1_vn5vm"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_e10js"]
+albedo_texture = ExtResource("1_vn5vm")
+uv1_scale = Vector3(11, 4, 0.25)
+
+[node name="Level" type="Node3D"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="."]
+size = Vector3(4, 0.25, 11)
+material = SubResource("StandardMaterial3D_e10js")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 1.5, 5)
